@@ -42,8 +42,8 @@ function DogFacts() {
     toast.success("Dog fact deleted successfully!");
   }
 
-  //console.log(facts);
-  //console.log(allNewFacts);
+  console.log(facts);
+  console.log(allNewFacts);
 
   return (
     <Container>
@@ -119,7 +119,7 @@ function DogFacts() {
         </>
       )}
 
-      {isLoading === true && <Spinner animation="border" variant="secondary" />}
+      {isLoading === true && <Spinner animation="border" variant="info" />}
     </Container>
   );
 }
