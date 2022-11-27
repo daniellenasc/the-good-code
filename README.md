@@ -3,7 +3,7 @@
 To run the application on your local machine you need to clone the repository, executing the commands below:
 
     $ git clone https://github.com/daniellenasc/the-good-code.git
-    $ cd games-app
+    $ cd the-good-code
     $ npm install
     $ npm start
 
