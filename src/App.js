@@ -4,6 +4,7 @@ import { Toaster } from "react-hot-toast";
 
 import NavBar from "./components/NavBar";
 import DogFacts from "./components/DogFacts";
+import FooterPage from "./components/FooterPage";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Toaster position="top-right" />
       <NavBar />
       <DogFacts />
+      <FooterPage />
     </div>
   );
 }

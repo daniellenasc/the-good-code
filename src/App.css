@@ -5,3 +5,30 @@
 .bg-disabled {
   background-color: #a7f5df !important;
 }
+
+.dog-card {
+  transition: all 300ms ease-in-out;
+}
+
+.dog-card:hover {
+  transform: scale(1.08);
+}
+
+.dark-bg {
+  background: #1f1a8d;
+}
+
+.footer {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer p {
+  margin: 0;
+  padding: 1rem;
+}

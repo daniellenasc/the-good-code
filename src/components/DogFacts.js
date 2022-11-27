@@ -57,13 +57,17 @@ function DogFacts() {
             {facts.facts.map((fact) => {
               return (
                 <Card
-                  style={{ width: "18rem", borderColor: "#a7f5df" }}
+                  style={{
+                    width: "18rem",
+                    borderColor: "#a7f5df",
+                    cursor: "pointer",
+                  }}
                   key={fact}
                   value={fact}
                   onClick={() => setSelectedCard(fact)}
                   className={
                     selectedCard !== fact
-                      ? "shadow-sm"
+                      ? "shadow-sm dog-card"
                       : "bg-disabled shadow-sm"
                   }
                 >
@@ -85,13 +89,17 @@ function DogFacts() {
             {allNewFacts.map((fact) => {
               return (
                 <Card
-                  style={{ width: "18rem", borderColor: "#a7f5df" }}
+                  style={{
+                    width: "18rem",
+                    borderColor: "#a7f5df",
+                    cursor: "pointer",
+                  }}
                   key={fact.name}
                   value={fact}
                   onClick={() => setSelectedCard(fact)}
                   className={
                     selectedCard !== fact
-                      ? "shadow-sm"
+                      ? "shadow-sm dog-card"
                       : "bg-disabled shadow-sm"
                   }
                 >
@@ -111,7 +119,7 @@ function DogFacts() {
         </>
       )}
 
-      {isLoading === true && <Spinner animation="border" variant="info" />}
+      {isLoading === true && <Spinner animation="border" variant="secondary" />}
     </Container>
   );
 }
